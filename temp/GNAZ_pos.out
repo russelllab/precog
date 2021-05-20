@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  GNAZ_pos.hmm
+# target sequence database:        /home/gurdeep/projects/PRECOG/temp/new_fasta_file.txt
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       GNAZ_subali_pos  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    8.5e-49  152.0  22.4      1e-48  151.7  22.4    1.0  1  sp|Q14330|GPR18_HUMAN  
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q14330|GPR18_HUMAN  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.7  22.4     1e-48     1e-48      34     326 ..      16     304 ..       4     329 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 151.7 bits;  conditional E-value: 1e-48
+        GNAZ_subali_pos  34 eysilvellyavllilvavvtllGNvlvllavlrnrklrtptnlfivsLAvADLlvallvlplsilyllagrwpfgralCklvlaldv 121
+                            +++ +++++++v++  +++++l+ N+++l+++++  k rt+  +++++ A+ DL++++ +lp++++y+ +++wpfg+ +C+++ al v
+  sp|Q14330|GPR18_HUMAN  16 SHPDEYKIAALVFYSCIFIIGLFVNITALWVFSCTTKKRTTVTIYMMNVALVDLIFIM-TLPFRMFYYAKDEWPFGEYFCQILGALTV 102
+                            566677788888888888888888**********************************.***************************** PP
+
+        GNAZ_subali_pos 122 vsvtaSilsLcaiSvdRYlaivrplryksktprrakav.illvWvlslliavppllgwntqkrgsnlteCslsl.....lyeraytlv 203
+                            +  ++    L  iS dRY+aiv+p  +k ++++  +++ +++vW++ l+ + p+ll+ +   ++s   +C+         + +  +l 
+  sp|Q14330|GPR18_HUMAN 103 FYPSIALWLLAFISADRYMAIVQPKYAKELKNTCKAVLaCVGVWIMTLTTTTPLLLLYKDPDKDSTPATCLKISdiiylKAVNVLNLT 190
+                            ******************************555555558*********************999*******999999766555666677 PP
+
+        GNAZ_subali_pos 204 lsvvsfflpllimlllYlriyralrrkatkisetnarsrdtrkqerkaaktllvvvlvFivcWlPffillllkafckksvevpetlfk 291
+                               + f++pl+im+ +Yl i++ l+          ++s+ + k + k ++ ++ +++  +vc++Pf+i + + ++   ++  ++    
+  sp|Q14330|GPR18_HUMAN 191 RLTFFFLIPLFIMIGCYLVIIHNLLH--------GRTSKLKPKVKEKSIRIIITLLVQVLVCFMPFHICFAFLMLGTGEN-SYNPWGA 269
+                            77889999******************........677777888888888888888888889*******988888887776.6777889 PP
+
+        GNAZ_subali_pos 292 vflwLaylNSclNPiiYallnkefrrafrrilelr 326
+                            +++ L+ l+ cl+ i+Y++++k+f+ ++ + +  r
+  sp|Q14330|GPR18_HUMAN 270 FTTFLMNLSTCLDVILYYIVSKQFQARVISVMLYR 304
+                            9************************9987776655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (366 nodes)
+Target sequences:                            1  (331 residues searched)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12.11
+//
+[ok]

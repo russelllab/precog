@@ -15,7 +15,7 @@ timestamp1 = time.time()
 ##########################
 
 parser = argparse.ArgumentParser(description='PRECOG (PREdicting COupling probabilities Of G-protein coupled receptors)', epilog='End of help. Contact: gurdeep.singh@bioquant.uni-heidelberg.de')
-parser.add_argument('fasta_file', help='path of input file(FASTA format); see data/sample.fasta')
+parser.add_argument('fasta_file', help='path of input file (FASTA formatted); see data/sample.fasta')
 parser.add_argument('--hmm', help='path to the input file\'s hmmsearch o/p(against 7tm_1); if absent, this script will generate one for itself using default settings of HMM')
 parser.add_argument('--o', help='path to the output file; if absent, the output will be printed on the screen')
 args = parser.parse_args()
@@ -226,9 +226,9 @@ print 'Completed.'
 #####################################
 
 def construct_features(name, pos, neg, hmm_pos, hmm_neg, features, row, *mut):
-	df = pd.read_table(path+'/data/selected_features.txt', sep = '\t', index_col = 0)
+	df = pd.read_csv(path+'/data/selected_features.txt', sep = '\t', index_col = 0)
 	map_position = {}
-	for x, y in df[['MSA_Pos', 'Domain_Pos']].as_matrix().tolist():
+	for x, y in df[['MSA_Pos', 'Domain_Pos']].to_numpy().tolist():
 		map_position[str(x)] = str(y.replace('(', '|').replace(')', ''))
 	#print map_position
 
@@ -460,7 +460,7 @@ def extract_model(gprotein):
 	return model
 
 def k_fold(file):
-	df = pd.read_table(file, lineterminator = '\n', sep = '\t')
+	df = pd.read_csv(file, lineterminator = '\n', sep = '\t')
 	col = list(df.columns.values)
 	df[col[1:-1]] = df[col[1:-1]].astype(float)
 	min_max_scaler_all = MinMaxScaler()

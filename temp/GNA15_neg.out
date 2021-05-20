@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  GNA15_neg.hmm
+# target sequence database:        /home/gurdeep/projects/PRECOG/temp/new_fasta_file.txt
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       GNA15_subali_neg  [M=375]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+    9.8e-51  158.5  21.5    1.2e-50  158.1  21.5    1.0  1  sp|Q14330|GPR18_HUMAN  
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|Q14330|GPR18_HUMAN  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  158.1  21.5   1.2e-50   1.2e-50      30     341 ..      12     321 ..       3     329 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 158.1 bits;  conditional E-value: 1.2e-50
+       GNA15_subali_neg  30 pilasielvfllfiavvlvllillgvlGNvlVilavlrnrklrtvtnlfivsLAvaDllvallvlpfslvyellgrwpfgrvlCklvl 117
+                            p  +s++  + ++++v++ +++++g++ N+ +++++ +++k+rt+ ++++++ A+ Dl++ + +lpf+++y+++++wpfg+ +C++  
+  sp|Q14330|GPR18_HUMAN  12 PFNSSHPDEYKIAALVFYSCIFIIGLFVNITALWVFSCTTKKRTTVTIYMMNVALVDLIFIM-TLPFRMFYYAKDEWPFGEYFCQILG 98 
+                            5567788889999999999999999999**********************************.************************* PP
+
+       GNA15_subali_neg 118 aldvlcvtaSilnLcaisvdRYlaivhPlryrrl.tprrakalillvWvlsllislpplllrglekrtsentqCfirf.....lseaa 199
+                            al v+     + +L  is dRY+aiv+P  ++ l ++ +a +++++vW++ l   +p+lll++   ++s    C            + 
+  sp|Q14330|GPR18_HUMAN  99 ALTVFYPSIALWLLAFISADRYMAIVQPKYAKELkNTCKAVLACVGVWIMTLTTTTPLLLLYKDPDKDSTPATCLKISdiiylKAVNV 186
+                            **********************************666666666*********************888888888876667987555555 PP
+
+       GNA15_subali_neg 200 yvlysslvsfvlplliivllYlrilralrrrkrrksnagrrdtrrrerkalktllvvvgvFivcWlPffvtnllealcpeskvpetlf 287
+                              l  +++ f++pl+i++ +Yl i+++l +       ++++ + + + k  + ++ +++  +vc++Pf++ +   +l   ++  + + 
+  sp|Q14330|GPR18_HUMAN 187 LNLTRLTFFFLIPLFIMIGCYLVIIHNLLH------GRTSKLKPKVKEKSIRIIITLLVQVLVCFMPFHICFAFLMLGTGENSYNPWG 268
+                            666777788888******************......999999*********************************999999999**** PP
+
+       GNA15_subali_neg 288 kvalwLgylNSclNPiiYvllnkefrqafrellfcsfqgrfvarilrscngevq 341
+                             +++ L+ l+ cl+ i+Y++ +k+f+++   ++  +   r   r++++++g+++
+  sp|Q14330|GPR18_HUMAN 269 AFTTFLMNLSTCLDVILYYIVSKQFQARVISVMLYRNYLRSM-RRKSFRSGSLR 321
+                            ********************************9998777655.45666666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (375 nodes)
+Target sequences:                            1  (331 residues searched)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 12.41
+//
+[ok]
