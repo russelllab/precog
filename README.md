@@ -11,11 +11,11 @@ conda env --name precog python=2.7
 conda activate precog
 ```
 
-4. Install the following packages: scipy, numpy, pandas, scikit-learn, hmmer
+4. Install the following packages: scipy, numpy, pandas, scikit-learn, HMMER
 ```
 conda install <package-name>
 ```
-Use HMMER [v3.1b2](http://hmmer.org/download.html) for output to the webserver
+Use HMMER [v3.1b2](http://hmmer.org/download.html) for output comparale to the webserver/original paper (botoom of the page)
 
 5. See help to know the command-line parameters
  ```
