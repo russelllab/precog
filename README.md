@@ -23,4 +23,5 @@ Use HMMER [v3.1b2](http://hmmer.org/download.html) for output to the webserver
 ```
 
 Contact: gurdeep[at]bioquant[.]uni-heidelberg[.]de
-Please cite [PRECOG](https://pubmed.ncbi.nlm.nih.gov/31143927/)
+
+Cite [PRECOG](https://pubmed.ncbi.nlm.nih.gov/31143927/)
