@@ -68,5 +68,6 @@ Denotes the Pfam 7tm1 (7TM1_POS) position, Ballesteros-Weinstein numbering (BW) 
 Information about the input mutation. Not applicable for wild type input.
 
 **Contact:** gurdeep[at]bioquant[.]uni-heidelberg[.]de
+
 **Cite:** [PRECOG](https://pubmed.ncbi.nlm.nih.gov/31143927/)
 >Singh G, Inoue A, Gutkind JS, Russell RB, Raimondi F. PRECOG: PREdicting COupling probabilities of G-protein coupled receptors. Nucleic Acids Res. 2019 Jul 2;47(W1):W395-W401. doi: 10.1093/nar/gkz392. PMID: 31143927; PMCID: PMC6602504.
