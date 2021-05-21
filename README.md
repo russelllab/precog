@@ -58,16 +58,18 @@ MLYRNYLRSMRRKSFRSGSLRSLSNINSEML
 
 ## Ouput
 The output file contains following headers:
-1. **GPCR/MUT**
+1. **GPCR/MUT**:
 Name of the input. Must be alphanumeric.
-2. **GNAI3 - GNAL**
+2. **GNAI3 - GNAL**:
 Couping values predicted by PRECOG (probabilities) or known from IUPHAR (PC: Primary Coupling, SC: Secondary Coupling) or the shedding assay experiment (LogRAi >= -1.0 is coupled, otherwise uncoupled). If the input sequence cannot be searched against a G-protein model or is unavaliable in IUPHAR or the data from the shedding assay experiment, it is shown with **-**.
-3. **7TM1_POS/BW/ALN_POS**
-Denotes the Pfam 7tm1 (7TM1_POS) position, Ballesteros-Weinstein numbering (BW) or alignment position (ALN_POS).
-4. **Mutation_Info**
+3. **7TM1_POS/BW/ALN_POS**:
+Denotes the Pfam 7tm1 (7TM1_POS) position, Ballesteros-Weinstein numbering (BW) or alignment position (ALN_POS) of the positions affected in the given input GPCR.
+4. **Mutation_Info**:
 Information about the input mutation. Not applicable for wild type input.
 
-**Contact:** gurdeep[at]bioquant[.]uni-heidelberg[.]de
-
-**Cite:** [PRECOG](https://pubmed.ncbi.nlm.nih.gov/31143927/)
+## Citation
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/31143927/)
 >Singh G, Inoue A, Gutkind JS, Russell RB, Raimondi F. PRECOG: PREdicting COupling probabilities of G-protein coupled receptors. Nucleic Acids Res. 2019 Jul 2;47(W1):W395-W401. doi: 10.1093/nar/gkz392. PMID: 31143927; PMCID: PMC6602504.
+
+## Contact
+gurdeep[at]bioquant[.]uni-heidelberg[.]de
