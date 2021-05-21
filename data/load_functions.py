@@ -89,7 +89,7 @@ def check_aska(name, gprotein_list, path):
 	else:
 		for gprotein in gprotein_list:
 			l += '\t-'
-	l += '\tASKA_LogRIA\n'
+	l += '\tLogRAi\n'
 
 	return l
 

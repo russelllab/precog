@@ -4,58 +4,86 @@
 # Freely distributed under the GNU General Public License (GPLv3).
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # query HMM file:                  GNAZ_pos.hmm
-# target sequence database:        /home/gurdeep/projects/PRECOG/temp/new_fasta_file.txt
+# target sequence database:        /home/gurdeep/projects/precog/temp/new_fasta_file.txt
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 Query:       GNAZ_subali_pos  [M=366]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
-    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
-    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
-    8.5e-49  152.0  22.4      1e-48  151.7  22.4    1.0  1  sp|Q14330|GPR18_HUMAN  
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------            -----------
+    2.7e-60  190.8   0.5    3.1e-60  190.6   0.5    1.0  1  sp|P30518|V2R_HUMAN  
+    1.1e-48  152.6  22.1    1.4e-48  152.3  22.1    1.0  1  Q14330               
 
 
 Domain annotation for each sequence (and alignments):
->> sp|Q14330|GPR18_HUMAN  
+>> sp|P30518|V2R_HUMAN  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  151.7  22.4     1e-48     1e-48      34     326 ..      16     304 ..       4     329 .. 0.87
+   1 !  190.6   0.5   3.1e-60   3.1e-60      28     333 ..      25     350 ..       4     371 .] 0.86
 
   Alignments for each domain:
-  == domain 1  score: 151.7 bits;  conditional E-value: 1e-48
-        GNAZ_subali_pos  34 eysilvellyavllilvavvtllGNvlvllavlrnrklrtptnlfivsLAvADLlvallvlplsilyllagrwpfgralCklvlaldv 121
-                            +++ +++++++v++  +++++l+ N+++l+++++  k rt+  +++++ A+ DL++++ +lp++++y+ +++wpfg+ +C+++ al v
-  sp|Q14330|GPR18_HUMAN  16 SHPDEYKIAALVFYSCIFIIGLFVNITALWVFSCTTKKRTTVTIYMMNVALVDLIFIM-TLPFRMFYYAKDEWPFGEYFCQILGALTV 102
-                            566677788888888888888888**********************************.***************************** PP
+  == domain 1  score: 190.6 bits;  conditional E-value: 3.1e-60
+      GNAZ_subali_pos  28 yfsatneysilvellyavllilvavvtllGNvlvllavlr..nrklrtptnlfivsLAvADLlvallvlplsilyllagrwpfgralCkl 115
+                          +  + ++ ++l   + ++ll +v+v + l N+lvl+a++r  +r  ++p  +fi +L +ADL val+ +  +++   ++r++  +alC+ 
+  sp|P30518|V2R_HUMAN  25 QERPLDTRDPLLARAELALLSIVFVAVALSNGLVLAALARrgRRGHWAPIHVFIGHLCLADLAVALFQVLPQLAWKATDRFRGPDALCRA 114
+                          455555555555556677888888888888**********55555788*******************99889998999************ PP
 
-        GNAZ_subali_pos 122 vsvtaSilsLcaiSvdRYlaivrplryksktprrakav.illvWvlslliavppllgwntqkrgsnlteCslsl.....lyeraytlv 203
-                            +  ++    L  iS dRY+aiv+p  +k ++++  +++ +++vW++ l+ + p+ll+ +   ++s   +C+         + +  +l 
-  sp|Q14330|GPR18_HUMAN 103 FYPSIALWLLAFISADRYMAIVQPKYAKELKNTCKAVLaCVGVWIMTLTTTTPLLLLYKDPDKDSTPATCLKISdiiylKAVNVLNLT 190
-                            ******************************555555558*********************999*******999999766555666677 PP
+      GNAZ_subali_pos 116 vlaldvvsvtaSilsLcaiSvdRYlaivrplryksk.tprrakavillvWvlslliavppllgwnt..qkrgsnlteCslsl...lyera 199
+                          v +l++v ++aS   ++a+ +dR++ai+rp+ + ++ +  ++   +l++W++sll+++p+l+++ +   + gs +t C   +     +r+
+  sp|P30518|V2R_HUMAN 115 VKYLQMVGMYASSYMILAMTLDRHRAICRPMLAYRHgSGAHWNRPVLVAWAFSLLLSLPQLFIFAQrnVEGGSGVTDCWACFaepWGRRT 204
+                          *******************************99999899999999*********************994555555555555555599*** PP
 
-        GNAZ_subali_pos 204 lsvvsfflpllimlllYlriyralrrkatkisetnarsrdtrkqerkaaktllvvvlvFivcWlPffillllkafckksvevpetlfk 291
-                               + f++pl+im+ +Yl i++ l+          ++s+ + k + k ++ ++ +++  +vc++Pf+i + + ++   ++  ++    
-  sp|Q14330|GPR18_HUMAN 191 RLTFFFLIPLFIMIGCYLVIIHNLLH--------GRTSKLKPKVKEKSIRIIITLLVQVLVCFMPFHICFAFLMLGTGEN-SYNPWGA 269
-                            77889999******************........677777888888888888888888889*******988888887776.6777889 PP
+      GNAZ_subali_pos 200 ytlvlsvvsfflpllimlllYlriyralrrk.............atkisetnarsrdtrkqerkaaktllvvvlvFivcWlPffillllk 276
+                          y+++++++ f++p+l ++++ ++i+r+++ +             + ++  ++  +   +    k+++++lv+v+v+++cW+Pff++ l  
+  sp|P30518|V2R_HUMAN 205 YVTWIALMVFVAPTLGIAACQVLIFREIHASlvpgpserpggrrRGRRTGSPGEGAHVSAAVAKTVRMTLVIVVVYVLCWAPFFLVQLWA 294
+                          ******************************************98777777888888899999**************************** PP
 
-        GNAZ_subali_pos 292 vflwLaylNSclNPiiYallnkefrrafrrilelr 326
-                            +++ L+ l+ cl+ i+Y++++k+f+ ++ + +  r
-  sp|Q14330|GPR18_HUMAN 270 FTTFLMNLSTCLDVILYYIVSKQFQARVISVMLYR 304
-                            9************************9987776655 PP
+      GNAZ_subali_pos 277 afckksvevpetlfkvflwLaylNSclNPiiYallnkefrrafrrilelrfkskqge 333
+                          a+ ++   +  + f + ++La+lNSc NP+iYa ++ ++  ++r++l++ + ++ ++
+  sp|P30518|V2R_HUMAN 295 AWDPEAP-LEGAPFVLLMLLASLNSCTNPWIYASFSSSVSSELRSLLCCARGRTPPS 350
+                          *****99.888889999********************************88766553 PP
+
+>> Q14330  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  152.3  22.1   1.4e-48   1.4e-48      33     326 ..      15     304 ..       3     329 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 152.3 bits;  conditional E-value: 1.4e-48
+  GNAZ_subali_pos  33 neysilvellyavllilvavvtllGNvlvllavlrnrklrtptnlfivsLAvADLlvallvlplsilyllagrwpfgralCklvlaldvvsvta 126
+                      ++++ +++++++v++  +++++l+ N+++l+++++  k rt+  +++++ A+ DL++++ +lp++++y+ +++wpfg+ +C+++ al v+  ++
+           Q14330  15 SSHPDEYKIAALVFYSCIFIIGLFVNITALWVFSCTTKKRTTVTIYMMNVALVDLIFIM-TLPFRMFYYAKDEWPFGEYFCQILGALTVFYPSI 107
+                      4566777888888888888888888**********************************.********************************** PP
+
+  GNAZ_subali_pos 127 SilsLcaiSvdRYlaivrplryksktprrakav.illvWvlslliavppllgwntqkrgsnlteCslsl.....lyeraytlvlsvvsfflpll 214
+                          L  iS dRY+aiv+p  +k ++++  +++ +++vW++ l+ + p+ll+ +   ++s   +C+         + +  +l    + f++pl+
+           Q14330 108 ALWLLAFISADRYMAIVQPKYAKELKNTCKAVLaCVGVWIMTLTTTTPLLLLYKDPDKDSTPATCLKISdiiylKAVNVLNLTRLTFFFLIPLF 201
+                      *************************555555558*********************999*******99999976655566667777889999*** PP
+
+  GNAZ_subali_pos 215 imlllYlriyralrrkatkisetnarsrdtrkqerkaaktllvvvlvFivcWlPffillllkafckksvevpetlfkvflwLaylNSclNPiiY 308
+                      im+ +Yl i++ l+          ++s+ + k + k ++ ++ +++  +vc++Pf+i + + ++   ++  ++    +++ L+ l+ cl+ i+Y
+           Q14330 202 IMIGCYLVIIHNLLH--------GRTSKLKPKVKEKSIRIIITLLVQVLVCFMPFHICFAFLMLGTGEN-SYNPWGAFTTFLMNLSTCLDVILY 286
+                      ***************........677777888888888888888888889*******988888887776.67778899**************** PP
+
+  GNAZ_subali_pos 309 allnkefrrafrrilelr 326
+                      ++++k+f+ ++ + +  r
+           Q14330 287 YIVSKQFQARVISVMLYR 304
+                      ********9987776655 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                              1  (366 nodes)
-Target sequences:                            1  (331 residues searched)
-Passed MSV filter:                         1  (1); expected 0.0 (0.02)
-Passed bias filter:                        1  (1); expected 0.0 (0.02)
-Passed Vit filter:                         1  (1); expected 0.0 (0.001)
-Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
-Initial search space (Z):                  1  [actual number of targets]
-Domain search space  (domZ):               1  [number of targets reported over threshold]
-# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
-# Mc/sec: 12.11
+Target sequences:                            2  (702 residues searched)
+Passed MSV filter:                         2  (1); expected 0.0 (0.02)
+Passed bias filter:                        2  (1); expected 0.0 (0.02)
+Passed Vit filter:                         2  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         2  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  2  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: inf
 //
 [ok]

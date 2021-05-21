@@ -15,8 +15,8 @@ timestamp1 = time.time()
 ##########################
 
 parser = argparse.ArgumentParser(description='PRECOG (PREdicting COupling probabilities Of G-protein coupled receptors)', epilog='End of help. Contact: gurdeep.singh@bioquant.uni-heidelberg.de')
-parser.add_argument('fasta_file', help='path of input file (FASTA formatted); see data/sample.fasta')
-parser.add_argument('--hmm', help='path to the input file\'s hmmsearch o/p(against 7tm_1); if absent, this script will generate one for itself using default settings of HMM')
+parser.add_argument('fasta_file', help='path to input file (FASTA formatted); see data/sample.fasta')
+parser.add_argument('--hmm', help='path to hmmsearch o/p of the input file against 7tm1; if absent, this script will generate one for itself using default settings of HMM')
 parser.add_argument('--o', help='path to the output file; if absent, the output will be printed on the screen')
 args = parser.parse_args()
 
@@ -110,7 +110,7 @@ def read_fasta(fasta_file):
 	return obj
 
 obj = read_fasta(fasta_file)
-print 'Read FASTA'
+print 'Reading input'
 #################################
 
 ###############################################
@@ -174,12 +174,12 @@ def extract_other_features(file):
 if os.path.exists(path+'/temp') == False:
 	os.system('mkdir '+path+'/temp')
 
+print 'Running hmmsearch against the HMM model of 7tm1'
 ## If the file is not provided by user, generate one itself
 if hmm_file == None:
 	hmm_file = load_functions.hmm_search(obj, path)
 
 extract_other_features(hmm_file)
-print 'Done reading HMMSEARCH against 7tm1'
 ###########################################################
 
 
@@ -206,7 +206,7 @@ def new_fasta():
 new_fasta()
 spinner = spinning_cursor()
 
-print 'Generating HMMSEARCH o/p of the input against Gproteins models.....',
+print 'Running hmmsearch against the HMM models of G-proteins'
 
 os.chdir(path+'/data/hmm_models/')
 
@@ -218,7 +218,7 @@ for files in os.listdir('.'):
 		time.sleep(0.01)
 		sys.stdout.write('\b')
 
-print 'Completed.'
+print 'done'
 ###########################################################
 
 #####################################
@@ -581,7 +581,5 @@ if out_file == None:
 else:
 	open(out_file, 'w').write(l)
 	print 'Output saved at: '+str(out_file)
-print 'Completed.\n'
-print 'End of PRECOG\n#####'
-print '##########\n'
+print '##########'
 sys.exit()
