@@ -1,9 +1,9 @@
 ## Installation
 
 1. Clone the repository
-2. Create a conda env
+2. Create a conda [environment](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
 ```
-conda env --name precog python=2.7 scipy numpy pandas scikit-learn
+conda create --name precog python=2.7 scipy numpy pandas scikit-learn=0.19.0
 ```
 3. Activate the environment
 ```
