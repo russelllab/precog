@@ -8,6 +8,7 @@ from sklearn.externals import joblib as jl
 print path
 sys.path.insert(0, path+'/data/')
 import load_functions
+import analysis
 timestamp1 = time.time()
 
 ##########################
@@ -18,6 +19,7 @@ parser = argparse.ArgumentParser(description='PRECOG (PREdicting COupling probab
 parser.add_argument('fasta_file', help='path to input file (FASTA formatted); see data/sample.fasta')
 parser.add_argument('--hmm', help='path to hmmsearch o/p of the input file against 7tm1; if absent, this script will generate one for itself using default settings of HMM')
 parser.add_argument('--o', help='path to the output file; if absent, the output will be printed on the screen')
+parser.add_argument('--hack', help='path to the directory where the hack output should be stored')
 args = parser.parse_args()
 
 fasta_file = args.fasta_file
@@ -31,6 +33,10 @@ out_file = args.o
 if out_file != None:
 	if out_file[0] != '/':
 		out_file = path + '/' + out_file
+hack_directory = args.hack
+if hack_directory != None:
+	if hack_directory[0] != '/':
+		hack_directory = path + '/' + hack_directory
 os.system('clear')
 print 'PRECOG v1.0\n##########'
 print '#####\n'
@@ -218,7 +224,6 @@ for files in os.listdir('.'):
 		time.sleep(0.01)
 		sys.stdout.write('\b')
 
-print 'done'
 ###########################################################
 
 #####################################
@@ -485,6 +490,12 @@ for gprotein in gprotein_list:
 
 			pos = read_gprotein_hmm_out(path+'/temp/'+gprotein+'_pos.out', hmm_pos_positions)
 			neg = read_gprotein_hmm_out(path+'/temp/'+gprotein+'_neg.out', hmm_neg_positions)
+
+			if hack_directory != None:
+				#if gprotein == 'GNA12':
+					l = analysis.main(path, pos, neg, hmm_pos, hmm_neg, features, gprotein, obj.keys(), obj)
+					open(hack_directory+'/'+str(gprotein)+'.txt', 'w').write(l)
+					#sys.exit()
 
 			l= 'GPCR\t'
 			for f in features:

@@ -17,7 +17,7 @@ conda activate precog
 ./precog.py --help
 ```
 
->**Note:** This version does not include structure-based predictions( using *InterPreTS*). It has been tested on Ubuntu-based environments.
+>**Note:** This version does not include structure-based predictions( using *InterPreTS*). This version has been tested on Ubuntu-based environments.
 
 ## Input
 1. The input file must be [**FASTA formatted**](https://en.wikipedia.org/wiki/FASTA_format). For example:
