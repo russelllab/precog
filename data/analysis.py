@@ -3,6 +3,7 @@ import pandas as pd
 import numpy
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.externals import joblib as jl
+import load_functions
 
 def construct_features(path, name, pos, neg, hmm_pos, hmm_neg, mutation_position, features, row, obj, mut):
 	#df = pd.read_table('/net/netfile2/ag-russell/bq_gsingh/gpcr/update/aln_psiblast/selected_features.txt', sep = '\t', index_col = 0)

@@ -16,15 +16,15 @@ timestamp1 = time.time()
 ##########################
 
 parser = argparse.ArgumentParser(description='PRECOG (PREdicting COupling probabilities Of G-protein coupled receptors)', epilog='End of help. Contact: gurdeep.singh@bioquant.uni-heidelberg.de')
-parser.add_argument('fasta_file', help='path to input file (FASTA formatted); see data/sample.fasta')
-parser.add_argument('--hmm', help='path to hmmsearch o/p of the input file against 7tm1; if absent, this script will generate one for itself using default settings of HMM')
+parser.add_argument('input', help='path to the input file (FASTA formatted); see data/sample.fasta')
+parser.add_argument('--hmm', help='path to the hmmsearch outputp of the input file against 7tm1; if absent, this script will generate one for itself using default settings of HMM')
 parser.add_argument('--o', help='path to the output file; if absent, the output will be printed on the screen')
 parser.add_argument('--hack', help='path to the directory where the hack output should be stored')
 args = parser.parse_args()
 
-fasta_file = args.fasta_file
+fasta_file = args.input
 if fasta_file[0] != '/':
-	fasta_file = path + '/' + args.fasta_file
+	fasta_file = path + '/' + args.input
 hmm_file = args.hmm
 if hmm_file != None:
 	if hmm_file[0] != '/':
@@ -46,7 +46,6 @@ print '#####\n'
 ## Base class for all sequences
 ################################
 class base:
-
 	def __init__(self, name, mut):
 		self.name = name
 		self.seq = ''
