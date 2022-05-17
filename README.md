@@ -1,3 +1,5 @@
+Check out the latest veriosn [here](https://github.com/raimondilab/precogx).
+
 ## Installation
 
 1. Clone the repository
